@@ -1,0 +1,54 @@
+﻿@page "/convert"
+
+<h3>Convert from USD to Moldavian LEU</h3>
+<br />
+<div class="form-control-lg">
+    <label class="form-label">
+        USD:
+        <input type="number" @bind="USD"/>
+    </label>
+    <br />
+    <br />
+    <label class="form-label">
+        LEU:
+        <input type="number" @bind="LEU" />
+    </label>
+    <br />
+    <br />
+    <button class="btn btn-outline-primary" @onclick="ConvertMoney">Convert</button>
+</div>
+
+
+@code {
+    double usd = 1;
+    double leu = 17.95;
+    // public double USD
+    // {
+    //     get
+    //     {
+    //         return usd;
+    //     }
+    //     set
+    //     {
+    //         leu = value * 17.95;
+    //         usd = value;
+    //     }
+    // }
+    // public double LEU
+    // {
+    //     get
+    //     {
+    //         return leu;
+    //     }
+    //     set
+    //     {
+    //         usd = value / 17.95;
+    //         leu = value;
+    //     }
+    // }
+
+    void ConvertMoney()
+    {
+
+    }
+}
